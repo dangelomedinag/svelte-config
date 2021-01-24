@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "src": "/api/products.js",
+      "src": "/api/(*).js",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
