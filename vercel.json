@@ -1,11 +1,17 @@
 {
   "routes": [
     {
-      "src": "/api/products",
-      "headers": {
-        "Access-Control-Allow-Origin": "*"
-      },
-      "dest": "api/products.js"
+      "src": "/api/products.js",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Origin, X-Requested-With, Content-Type, Accept, Range"
+        }
+      ]
     }
   ]
 }
