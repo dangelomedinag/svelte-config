@@ -1,11 +1,13 @@
 {
-  "routes": [
+  "headers": [
     {
-      "src": "/api/*.js",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
-      }
+      "source": "/api/.*",
+      "headers": [
+        {
+          "Access-Control-Allow-Origin": "*",
+          "valAccess-Control-Allow-Headersue": "Origin, X-Requested-With, Content-Type, Accept"
+        }
+      ]
     }
   ]
 }
