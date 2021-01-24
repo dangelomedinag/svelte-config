@@ -5,7 +5,7 @@
       "headers": {
         "Access-Control-Allow-Origin": "*"
       },
-      "dest": "api/products"
+      "dest": "api/products.js"
     }
   ]
 }
