@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
+    "firebase-admin": "^9.4.2",
     "sirv-cli": "^1.0.0"
   }
 }
