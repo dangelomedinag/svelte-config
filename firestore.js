@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 import admin from 'firebase-admin'
-dotenv.config()
+// dotenv.config()
 
 const adminsdkconfig = {
   "project_id": process.env.FIRESTORE_project_id ,
