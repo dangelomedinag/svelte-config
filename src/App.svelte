@@ -1,5 +1,6 @@
 <script>
   let name = 'world';
+  let counter = 1;
 </script>
 
 <main>
@@ -8,6 +9,9 @@
     Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
     how to build Svelte apps.
   </p>
+  <button on:click={() => counter--}>-</button><span style="padding: 0 1em"
+    >{counter}</span
+  ><button on:click={() => counter++}>+</button>
 </main>
 
 <style>
