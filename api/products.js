@@ -1,4 +1,4 @@
-import { db } from '../firestore'
+const { db } = require('../firestore.js')
 
 module.exports = (req, res) => {
   let productosarr = []
