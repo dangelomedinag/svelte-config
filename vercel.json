@@ -11,7 +11,8 @@
           "key": "Access-Control-Allow-Headers",
           "value": "Origin, X-Requested-With, Content-Type, Accept, Range"
         }
-      ]
+      ],
+      "dest": "api/*.js"
     }
   ]
 }
