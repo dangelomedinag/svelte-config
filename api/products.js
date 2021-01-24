@@ -1,6 +1,6 @@
 const { db } = require('../firestore.js')
 
-module.exports = (req, res) => {
+module.exports = async(req, res) => {
   let productosarr = []
   const response = await db.collection('productos').get();
     response.forEach((doc) => {
