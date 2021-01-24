@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "src": "/api/products",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      },
+      "dest": "api/products"
+    }
+  ]
+}

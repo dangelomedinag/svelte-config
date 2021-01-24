@@ -7,6 +7,7 @@ module.exports = (req, res) => {
       const obj = doc.data()
       productosarr = [...productosarr, {...obj}];
     });
+    
     res.status(200).json(productosarr);
   });
     // response.forEach((doc) => {
