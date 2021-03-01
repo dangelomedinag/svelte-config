@@ -1,21 +1,16 @@
 {
-	"headers": [
+	"routes": [
 		{
 			"source": "/api/(.*)",
-			"headers": [
-				{
-					"key": "Access-Control-Allow-Origin",
-					"value": "*"
-				},
-				{
-					"key": "Access-Control-Allow-Headers",
-					"value": "Origin, Access-Control-Allow-Headers, Authorization, X-Requested-With, Content-Type, Accept"
-				},
-				{
-					"key": "Access-Control-Allow-Methods",
-					"value": "DELETE, POST, GET, OPTIONS"
-				}
-			]
+			"methods": [
+				"POST",
+				"GET"
+			],
+			"headers": {
+				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS",
+				"Access-Control-Allow-Headers": "Origin, Access-Control-Allow-Headers, Authorization, X-Requested-With, Content-Type, Accept"
+			}
 		}
 	]
 }
