@@ -9,7 +9,11 @@
 				},
 				{
 					"key": "Access-Control-Allow-Headers",
-					"value": "Origin, X-Requested-With, Content-Type, Accept"
+					"value": "DELETE, POST, GET, OPTIONS"
+				},
+				{
+					"key": "Access-Control-Allow-Methods",
+					"value": "Origin, Access-Control-Allow-Headers, Authorization, X-Requested-With, Content-Type, Accept"
 				}
 			]
 		}
