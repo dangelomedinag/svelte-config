@@ -1,6 +1,6 @@
 const { db } = require('../firestore.js')
 
-module.exports = allowCors(handler)
+// module.exports = allowCors(handler)
 
 
 const allowCors = fn => async (req, res) => {
