@@ -2,6 +2,10 @@
   "headers": [
     {
       "source": "/api/(.*)",
+      "methods": [
+        "POST",
+        "GET"
+      ],
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
