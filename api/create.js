@@ -10,7 +10,7 @@ module.exports = (req, res) => {
   let current = documentSnapshot.data().likes;
 
 		documentSnapshot.ref.update({likes: current + 1}).then(result => {
-			res.status(200).json({id, updated_at: response._writeTime._seconds})
+			res.status(200).json({id, updated_at: result._writeTime._seconds})
 		})
 	}).catch(err=>{
 		res.status(301).json(JSON.stringify({message: "no se pudo actualizar el documento", err}))
