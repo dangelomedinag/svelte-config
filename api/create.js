@@ -1,4 +1,4 @@
-// const { db } = require('../firestore.js')
+const { db } = require('../firestore.js')
 
 module.exports = async (req, res) => {
   // const {number} = req.body
@@ -12,7 +12,7 @@ module.exports = async (req, res) => {
 		res.status(200).json({id, updated_at: response._writeTime._seconds})
 	}).catch(err=>{
 		console.log(err)
-		res.status(301).end(JSON.stringify({message: "no se pudo actualizar el documento", err}))
+		res.status(301).json(JSON.stringify({message: "no se pudo actualizar el documento", err}))
 	})
 }
 
