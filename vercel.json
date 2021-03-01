@@ -4,16 +4,8 @@
 			"source": "/api/(.*)",
 			"headers": [
 				{
-					"key": "Access-Control-Allow-Origin",
+					"key": "access-control-allow-origin",
 					"value": "*"
-				},
-				{
-					"key": "Access-Control-Allow-Methods",
-					"value": "DELETE, POST, GET, OPTIONS"
-				},
-				{
-					"key": "Access-Control-Allow-Headers",
-					"value": "Origin, Access-Control-Allow-Headers, Authorization, X-Requested-With, Content-Type, Accept"
 				}
 			]
 		}
