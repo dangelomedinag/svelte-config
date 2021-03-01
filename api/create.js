@@ -15,7 +15,7 @@ module.exports = (req, res) => {
 	}).catch(err=> {
 		res.status(301).json(JSON.stringify({message: "no se pudo actualizar el documento", err}))
 	})
-	
+	 
 }
 
 
