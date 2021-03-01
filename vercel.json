@@ -1,7 +1,7 @@
 {
 	"headers": [
 		{
-			"source": "/api/create.js",
+			"source": "/api/*",
 			"headers": [
 				{
 					"key": "Access-Control-Allow-Credentials",
