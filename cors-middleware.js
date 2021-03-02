@@ -1,4 +1,4 @@
-const allowCors =  (fn) => async (req, res) => {
+export const allowCors = (fn) => async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true)
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS')
@@ -13,4 +13,4 @@ const allowCors =  (fn) => async (req, res) => {
   return await fn(req, res)
 }
 
-export default allowCors
+export default allowCors;

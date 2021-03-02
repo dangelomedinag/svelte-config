@@ -1,8 +1,5 @@
-// import db from "../firestore";
-// import allowCors from "../cors-middleware";
-
-const db = require('../firestore.js');
-const allowCors = require('../cors-middleware.js');
+const { db } = require('../firestore.js');
+const { allowCors } = require('../cors-middleware.js');
 
 // module.exports = (req, res) => {
 //   const {id} = req.body;

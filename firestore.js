@@ -13,5 +13,7 @@ admin.initializeApp({
   credential: admin.credential.cert(adminsdkconfig)
 });
 
+// const db = admin.firestore()
 
-export default admin.firestore();
+
+export const db = admin.firestore();
