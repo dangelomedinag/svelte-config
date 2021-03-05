@@ -36,7 +36,7 @@ const { allowCors } = require('../cors-middleware.js');
 const handler = (req, res) => {
 	const {id} = req.body;
 	
-	let documentRef = db.doc(`productos/${id}`)
+	let documentRef = db.doc(`comments/${id}`)
 
 	documentRef.get().then(documentSnapshot => {
   let current = documentSnapshot.data().likes;
