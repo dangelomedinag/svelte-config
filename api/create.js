@@ -34,14 +34,16 @@ const { allowCors } = require('../cors-middleware.js');
 // }
 
 const handler = (req, res) => {
-	const {id} = req.body;
+	const {id, user} = req.body;
+
+
 	
 	let documentRef = db.doc(`comments/${id}`)
 
 	documentRef.get().then(documentSnapshot => {
   let current = documentSnapshot.data().likes;
 
-		documentSnapshot.ref.update({likes: current + 1}).then(result => {
+		documentSnapshot.ref.update({likes: current + 1, users_likes: [user]}).then(result => {
 			res.status(200).json({id, likes: current + 1, updated_at: result._writeTime._seconds}).end()
 		})
 	}).catch(err=> {
