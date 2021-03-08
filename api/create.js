@@ -1,4 +1,5 @@
-const { db } = require('../firestore.js');
+
+const { db, util } = require('../firestore.js');
 const { allowCors } = require('../cors-middleware.js');
 
 // module.exports = (req, res) => {
@@ -43,7 +44,7 @@ const handler = (req, res) => {
 	documentRef.get().then(documentSnapshot => {
   let current = documentSnapshot.data().likes;
 
-		documentSnapshot.ref.update({likes: current + 1, users_likes: [user]}).then(result => {
+		documentSnapshot.ref.update({likes: util.FieldValue.increment(1), users_likes: util.FieldValue.arrayUnion(user)}).then(result => {
 			res.status(200).json({id, likes: current + 1, updated_at: result._writeTime._seconds}).end()
 		})
 	}).catch(err=> {

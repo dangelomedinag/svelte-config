@@ -15,5 +15,7 @@ admin.initializeApp({
 
 // const db = admin.firestore()
 
+// admin.firestore.FieldValue
 
 export const db = admin.firestore();
+export const util = admin.firestore;
